@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import {VscError} from "react-icons/vsc"
+import CartItem from "../components/cart-item";
 
 const cartItems = [
 
@@ -43,7 +44,7 @@ const Cart = () => {
     <div className="cart">
       <main>
         {
-          cartItems.map((i,idx)=> (<cartItems key={idx} cartItem={i} />)
+          cartItems.map((i,idx)=> (<CartItem key={idx} cartItem={i} />)
             )
         }
       </main>
@@ -62,7 +63,7 @@ const Cart = () => {
         </p>
 
         <input type="text" placeholder="Coupan code" 
-        value={couponCode} onChange={(e)=> setCouponCode(e.target.value)}/>
+          value={couponCode} onChange={(e)=> setCouponCode(e.target.value)}/>
         {
           couponCode && (
             isValidCouponCode? (
