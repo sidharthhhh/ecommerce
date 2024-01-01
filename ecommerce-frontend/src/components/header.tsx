@@ -2,7 +2,7 @@ import { FaSearch, FaShoppingBag, FaSignInAlt, FaSignOutAlt, FaUser } from "reac
 import { Link } from "react-router-dom"
 import { useState } from "react"
 
-const user = {_id: "sdfdf", role: "admin"}
+const user = {_id: "sd", role: ""}
 
 
 const Header = () => {

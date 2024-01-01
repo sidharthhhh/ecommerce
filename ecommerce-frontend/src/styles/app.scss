@@ -35,6 +35,10 @@
   
   @import "admin-styles/mixin";
   @import "home";
+  @import "cart.scss";
+  @import "shipping.scss";
+  @import "login.scss";
+  @import "search.scss";
   
   @import "admin-styles/dashboard";
   @import "admin-styles/products";
@@ -42,7 +46,22 @@
   @import "admin-styles/dashboardapp";
   @import "admin-styles/mediaquery";
   
+.conatiner {
+  max-width: 1376px;
+  margin: auto;
+  overflow: auto;
+  > h1 {
+    @include heading;
+    margin:  1rem;
+    text-align: left;
+  }
+}
 
+.heading {
+  @include heading;
+  margin: 1rem 0;
+  text-align: center
+}
 
 
   .header{
@@ -79,7 +98,6 @@
       }
     }  
   }
-
 
 
 
