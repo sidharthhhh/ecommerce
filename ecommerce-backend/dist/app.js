@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 });
 // using routes
 app.use("/api/v1/user", userRoute);
+// app.use()
 app.listen(port, () => {
     console.log(`server is working oin localhost:${port}`);
 });
